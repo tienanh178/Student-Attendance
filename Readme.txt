@@ -1,4 +1,4 @@
-Attendance System Setup Guide
+#Attendance System Setup Guide
 
 Step 1: Install Dependencies
 Run the following commands to install the required packages:
