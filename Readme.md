@@ -1,6 +1,6 @@
 # Attendance System Setup Guide 
 
-### Step 1: Install Dependencies 
+## Step 1: Install Dependencies 
 Run the following commands to install the required packages:
 
 pip install -r requirements.txt
@@ -11,10 +11,10 @@ Create a folder call insight_face_models/models
 Install buffalo_l model to that folder and unzip it
 Link: "https://github.com/deepinsight/insightface/tree/master/model_zoo"
 
-### Step 2: Create the Database 
+## Step 2: Create the Database 
 Create a PostgreSQL database named Test_attendance.
 
-### Step 3: Initialize Tables in PostgreSQL 
+## Step 3: Initialize Tables in PostgreSQL 
 Run the following SQL commands to create the necessary tables:
 
 CREATE TABLE teacher (
@@ -63,10 +63,10 @@ VALUES ('Nguyễn Văn A', 'GV001', 'nguyenvana', 'nguyenvana@example.com', '123
 INSERT INTO class (class_name, number_of_study_limit, class_code, place_study, teacher_id)
 VALUES ('Lập trình Python cơ bản', 30, 'LPY101', 'Phòng 101', 1);
 
-### Step 4: Configure Environment 
+## Step 4: Configure Environment 
 Update your .env file with your PostgreSQL database connection details (host, user, password, database name, etc.).
 
-### Step 5: Run the Application 
+## Step 5: Run the Application 
 Use the following command to start the application:
 
 streamlit run Home.py
